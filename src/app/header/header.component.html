@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse" style="background-color: red; color: white;">
+  <div class="container-fluid">
+    <!-- <div class="navbar-header">
+      <a routerLink="header" class="navbar-brand" style="color: white">Home</a>
+    </div> -->
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav ">
+        <li><a routerLink="gamelist">Games</a></li>
+        <li><a routerLink="game-console">Game Console</a></li>
+      </ul>
+      <ul class="navbar navbar-right">
+        <a  class="dropdown-toggle" role="button" (click)="toggleDropdown()">Manage <span class="caret"></span></a>
+        <ul [ngClass]="{show: show}"class="dropdown-menu">
+          <li><a >Fetch</a></li>
+          <li><a >Save</a></li>
+        </ul>
+      </ul>
+
+    </div>
+  </div>
+</nav>
