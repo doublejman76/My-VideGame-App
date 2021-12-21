@@ -1,4 +1,4 @@
-<div class="backdrop"></div>
+<div class="backdrop" (click)="onClose()"></div>
 <div class="alert-box">
     <p>{{ details.title }}</p>
     <p>{{ details.company }}</p>
@@ -6,6 +6,6 @@
     <p>{{ details.price }}</p>
     <img [src] = "details.coverImagePath" width="50%">
     <div class="alert-box-actions">
-        <button (click)="onClose()">Close</button>
+        <button (click)="onClose()" style="margin: 10px">Close</button>
     </div>
 </div>

@@ -1,9 +1,9 @@
 <div class="list-group">
   <a *ngFor="let console of consoles" class="list-group-item">
     <h4 class="list-group-item-heading">Select Console</h4>
-    <button class="btn btn-primary">Add to Cart</button>
+    <button class="btn btn-primary" style="margin: 10px">Add to Cart</button>
     <img [src]="console.coverImagePath"  style="max-height: 200px; max-width: 200px;" (click)="onDetails(console)">
   </a>
 </div>
-<app-alert-details (close)="onClose()" *ngIf="consoleInfo"[details]="consoleInfo"></app-alert-details>
+<app-alert-details (close)="onClose()" *ngIf="consoleInfo" [details] = "consoleInfo"></app-alert-details>
 

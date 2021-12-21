@@ -8,15 +8,14 @@
       <ul class="nav navbar-nav ">
         <li><a routerLink="gamelist">Games</a></li>
         <li><a routerLink="game-console">Game Console</a></li>
+        <li><a routerLink="shopping-cart">Cart</a></li>
       </ul>
-      <ul class="navbar navbar-right">
-        <a  class="dropdown-toggle" role="button" (click)="toggleDropdown()">Manage <span class="caret"></span></a>
-        <ul [ngClass]="{show: show}"class="dropdown-menu">
-          <li><a >Fetch</a></li>
-          <li><a >Save</a></li>
-        </ul>
+      <ul class="nav navbar-right">
+      <li><a routerLink="">Login</a></li>
       </ul>
 
     </div>
   </div>
 </nav>
+
+
